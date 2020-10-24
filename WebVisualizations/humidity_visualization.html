@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  
+  <!--Adding the link to the style change-->
+  <link href ="Resources/assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!--Introduce navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!--Add Navbar header with white colored Latitude-->
+        <a class="navbar-brand logo" href="index.html" style="color: white">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">    
+                <li class="nav-item dropdown">
+                    <!--Create dropdown menu for Plots-->
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Plots </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <!--Add dropdown menu links-->
+                        <a class="dropdown-item" href="max_temp_visualization.html">Max Temperature</a>
+                        <a class="dropdown-item" href="humidity_visualization.html">Humidity</a>
+                        <a class="dropdown-item" href="cloudiness_visualization.html">Cloudiness</a>
+                        <a class="dropdown-item" href="windspeed_visualization.html">Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                     <!--Add comparison link-->
+                    <a class="nav-link" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                     <!--Add data link-->
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+  <br>
+<br>
+      <!--Create overall grid-->
+      <div class="container">
+        <br>
+        <div class="row">
+          <!-- left side -->
+          <div class="col-lg-8">
+            <!--Left side title-->
+            <h1>Humidity</h1>
+            <hr>
+            <img src="Resources/assets/images/Fig2.png" alt="Latitude vs. Humidity" width = "85%">
+            <!--First paragraph-->
+            <p> There is a weak correlation between humidity and latitude. However, the graph shows a couple of cities with a decrease in humidity from 60 deg. latitude to 80 deg. latitude. 
+            </p>
+            <hr>
+          </div>       
+          
+           <!-- rigth side -->
+           <div class="col-lg-4">
+            <br>
+            <!--Right side title-->
+            <h2>Visualizations</h2>
+            <hr>
+            <!--Load in the pictures-->
+            <div class='row'>
+              <div class="col-3 col-md-3 col-lg-6">
+                <a href="max_temp_visualization.html"><img src="Resources/assets/images/Fig1.png" alt="Latitude vs. Temperature" class="img-fluid" alt="Responsive image"></a>
+              </div>
+              <div class="col-3 col-md-3 col-lg-6">
+                <a href="humidity_visualization.html"><img src="Resources/assets/images/Fig2.png" alt="Latitude vs. Humidity" class="img-fluid" alt="Responsive image"></a>
+              </div>
+              <div class="col-3 col-md-3 col-lg-6">
+                <a href="cloudiness_visualization.html"><img src="Resources/assets/images/Fig3.png" alt="Latitude vs. Cloudiness" class="img-fluid" alt="Responsive image"></a>
+              </div>
+              <div class="col-3 col-md-3 col-lg-6">
+                <a href="windspeed_visualization.html"><img src="Resources/assets/images/Fig4.png" alt="Latitude vs. Wind Speed" class="img-fluid" alt="Responsive image"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  
+  </html>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</html>
